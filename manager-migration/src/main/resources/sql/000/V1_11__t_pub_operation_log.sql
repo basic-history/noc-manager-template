@@ -6,7 +6,7 @@ create table pub_operation_log (
   controller          VARCHAR(200),
   method              VARCHAR(200),
   ip                  VARCHAR(40),
-  status              TINYINT(4)
+  status              TINYINT(4),
   elapsed_time        decimal(10,2),
   create_time         datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   remark              VARCHAR(4000)
