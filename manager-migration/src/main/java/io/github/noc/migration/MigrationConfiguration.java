@@ -11,7 +11,6 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@EnableCaching
 public class MigrationConfiguration {
 
 	@ConfigurationProperties(prefix = "flyway")
