@@ -11,8 +11,7 @@
     <!-- 控制台打印 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%-5level | %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger - %msg%n
-            </pattern>
+            <pattern>%highlight(%-5level) | %d{yyyy-MM-dd HH:mm:ss.SSS} %boldYellow([%thread]) %boldGreen([%logger]) - %msg%n</pattern>
             <charset>UTF-8</charset>
         </encoder>
     </appender>
@@ -32,7 +31,7 @@
 
     <!-- 开发环境 -->
     <springProfile name="rd">
-        <root level="DEBUG">
+        <root level="INFO">
             <appender-ref ref="STDOUT"/>
         </root>
     </springProfile>
