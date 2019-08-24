@@ -22,6 +22,7 @@ import com.alibaba.fastjson.support.spring.FastJsonJsonView;
 
 /**
  * 提供通用的异常处理，包括打印异常、输出统一的错误信息
+ * @author abeir
  *
  */
 public class DefaultExceptionHandler extends SimpleMappingExceptionResolver {

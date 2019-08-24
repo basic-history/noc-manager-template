@@ -1,5 +1,5 @@
 create table pub_login_log (
-  id          VARCHAR(20) primary key,
+  id          VARCHAR(32) primary key,
   username    VARCHAR(30),
   agent       VARCHAR(255),
   ip          VARCHAR(40),
