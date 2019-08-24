@@ -13,20 +13,31 @@
         <module>manager-backend</module>
     </modules>
 
+<!--
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.4.RELEASE</version>
-    </parent>
+        <version>2.1.2.RELEASE</version>
+    </parent>-->
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk.version>1.8</jdk.version>
-        <flyway.version>4.1.2</flyway.version>
-        <druid.version>1.1.10</druid.version>
-        <spring.shell.version>2.0.1.RELEASE</spring.shell.version>
-        <mysql-connector-java.version>5.1.40</mysql-connector-java.version>
     </properties>
+
+
+    <!-- 不使用parent的形式导入-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.1.2.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 
