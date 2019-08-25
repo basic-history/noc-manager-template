@@ -1,5 +1,5 @@
 create table pub_permission (
-  id      VARCHAR(20) primary key,
+  id      VARCHAR(32) primary key,
   name    VARCHAR(50),
   code    VARCHAR(255),
   menu_id VARCHAR(32),

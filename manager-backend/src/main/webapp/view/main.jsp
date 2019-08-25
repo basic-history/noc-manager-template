@@ -7,11 +7,13 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     
     <title><c:out value="${_title}"/></title>
+    <link rel="icon" href="<c:url value="/static/img/favicon.ico"/>" type="image/x-icon" />
 	<!-- 全局js -->
 	<script src="<c:url value="/static/js/jquery.min.js"/>"></script>
 	<script src="<c:url value="/static/js/bootstrap.min.js"/>"></script>

@@ -1,5 +1,5 @@
 create table pub_role (
-  id          VARCHAR(20) primary key,
+  id          VARCHAR(32) primary key,
   name        VARCHAR(30),
   is_tmp      VARCHAR(1),
   create_by   VARCHAR(30),

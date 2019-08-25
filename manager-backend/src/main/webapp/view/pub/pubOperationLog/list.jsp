@@ -146,7 +146,7 @@
         				title:'备注',
         				content: '<pre class="pre-scrollable"><code>'+remark+'</code></pre>',
         				btn:'关闭',
-        				area:'600px'
+        				area:'886px'
         			});
         		}
         	},'json');

@@ -1,5 +1,5 @@
 create table pub_user (
-  id              VARCHAR(20) primary key,
+  id              VARCHAR(32) primary key,
   username        VARCHAR(30),
   password        VARCHAR(80),
   safe_password   VARCHAR(80),

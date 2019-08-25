@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="<c:url value="/static/css/iconfont.css"/>">
   <link rel="stylesheet" href="<c:url value="/static/css/login.css"/>">
   <link rel="stylesheet" href="<c:url value="/static/css/jigsaw.css"/>">
+  <link rel="icon" href="<c:url value="/static/img/favicon.ico"/>" type="image/x-icon" />
   <script>
       if (window.top !== window.self) {
           window.top.location = window.location;
