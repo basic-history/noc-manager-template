@@ -97,15 +97,11 @@
      		this.submit();
      	});
 
-    	var backpath = "http://www.baidu.com";
-    	if(backpath){
-    	    $("body .main .left").css('background-image','url('+ backpath +')');
-        }
+   	  //  $("body .main .left").css('background-image','url('+ backpath +')');
 
     })
   
 
-    
     function changeImg(){
 	var imgSrc = $("#img-code");
 	var src = imgSrc.attr("src");

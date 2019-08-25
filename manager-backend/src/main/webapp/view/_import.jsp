@@ -16,3 +16,5 @@
 <link href="<c:url value="/static/css/animate.css"/>" rel="stylesheet">
 <link href="<c:url value="/static/css/style.css"/>" rel="stylesheet">
 
+<link rel="icon" href="<c:url value="/static/img/favicon.ico"/>" type="image/x-icon" />
+

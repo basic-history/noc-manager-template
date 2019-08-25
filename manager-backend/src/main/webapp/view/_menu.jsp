@@ -5,17 +5,18 @@
 <ul class="nav" id="side-menu">
     <li class="nav-header">
         <div class="dropdown profile-element">
-            <span><img alt="image" class="img-circle" src="www.logo.com" style="width: 60px"/></span>
+            <span><img alt="image" class="img-circle" src="<c:url value="/static/img/p2223876126.jpg"/>" style="width: 70px;height:70px;"/></span>
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <span class="clear">
                <span class="block m-t-xs"><strong class="font-bold">${username }</strong></span>
-                <span class="text-muted text-xs block">${roleName }<b class="caret"></b></span>
+              <%--   <span class="text-muted text-xs block">${roleName }<b class="caret"></b></span> --%>
+                <span class="text-muted text-xs block">${roleName }</span>
                 </span>
             </a>
-            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+          <%--   <ul class="dropdown-menu animated fadeInRight m-t-xs">
                 <li><a href="<c:url value="/logout"/>">安全退出</a>
                 </li>
-            </ul>
+            </ul> --%>
         </div>
         <div class="logo-element">${username }
         </div>

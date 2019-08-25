@@ -37,10 +37,10 @@ input:-ms-input-placeholder { /* Internet Explorer 10-11 */
    }
 
    .left {
-     position: relative;
+    /*  position: relative; */
      width: 64%;
      height: 100vh;
-     background: url("../img/login/login-bg.png") no-repeat;
+     background: url("../img/login/p2184680461.jpg") no-repeat;
      background-size: 100% 100%;
    }
 
@@ -126,6 +126,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10-11 */
      margin-left:10px;
      height:40px;
      line-height:40px;
+     width:200px;
    }
    .right .form .password-box{
      margin-top:20px;
@@ -139,6 +140,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10-11 */
      margin-left:10px;
      height:40px;
      line-height:40px;
+     width:200px;
    }
    .right .form .login{
      margin-top:40px;
@@ -149,14 +151,14 @@ input:-ms-input-placeholder { /* Internet Explorer 10-11 */
    .right .form .login input{
      border-radius:8px;
      width:100%;
-     height:56px;
+     height:46px;
      font-size:20px;
      color:#fff;
-     background-color: #fda619;
+     background-color: #91484e;
      cursor: pointer;
    }
    .right .form .login input:hover{
-      background-color: #ce8d0b;
+      background-color:#8d9391 ;
     }
 	.hide{
 		display:none;

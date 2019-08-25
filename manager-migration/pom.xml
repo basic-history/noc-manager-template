@@ -12,6 +12,15 @@
     <artifactId>manager-migration</artifactId>
 
 
+<!--
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.2.RELEASE</version>
+    </parent>-->
+
+
+
     <properties>
         <flyway.version>4.1.2</flyway.version>
         <druid.version>1.1.10</druid.version>
@@ -19,6 +28,19 @@
         <mysql-connector-java.version>5.1.40</mysql-connector-java.version>
     </properties>
 
+   <!-- 不使用parent的形式导入-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.1.2.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    
     <dependencies>
         <!-- spring-parent-->
         <dependency>

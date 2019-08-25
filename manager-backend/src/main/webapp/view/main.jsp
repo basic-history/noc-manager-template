@@ -48,26 +48,26 @@
 <!--                             </div> -->
 <!--                         </form> -->
                     </div>
-                    <ul class="nav navbar-top-links navbar-right">
+            <!--         <ul class="nav navbar-top-links navbar-right">
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-envelope"></i> <!-- <span class="label label-warning">16</span> -->
+                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
                             </a>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i> <!-- <span class="label label-primary">8</span> -->
+                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
                             </a>
                         </li>
-<!--                         <li class="hidden-xs"> -->
-<!--                             <a href="index_v1.html" class="J_menuItem" data-index="0"><i class="fa fa-cart-arrow-down"></i> 购买</a> -->
-<!--                         </li> -->
-<!--                         <li class="dropdown hidden-xs"> -->
-<!--                             <a class="right-sidebar-toggle" aria-expanded="false"> -->
-<!--                                 <i class="fa fa-tasks"></i> 主题 -->
-<!--                             </a> -->
-<!--                         </li> -->
-                    </ul>
+                        <li class="hidden-xs">
+                            <a href="index_v1.html" class="J_menuItem" data-index="0"><i class="fa fa-cart-arrow-down"></i> 购买</a>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a class="right-sidebar-toggle" aria-expanded="false">
+                                <i class="fa fa-tasks"></i> 主题
+                            </a>
+                        </li>
+                    </ul> -->
                 </nav>
             </div>
             <div class="row content-tabs">
