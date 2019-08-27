@@ -80,7 +80,7 @@
                                 	</div>
 	                            </div>
 	                        </div>
-	                        <div class="row">
+	                   <%--      <div class="row">
 	                            <div class="col-md-6">
 	                                <div class="form-group">
 	                                	<label class="col-lg-2 control-label">手机号码</label>
@@ -89,7 +89,7 @@
                                     	</div>
                                 	</div>
 	                            </div>
-	                        </div>
+	                        </div> --%>
 	                        <div class="row">
 	                            <div class="col-md-6">
 	                                <div class="form-group">
@@ -159,11 +159,11 @@ $(document).ready(function () {
   				required:true,
 				maxlength:80
   			},
-  			phone:{
+  		/* 	phone:{
 				required:true,
 				maxlength:11,
 				digits:true
-			},
+			}, */
   			roles:'required',
   			password_repeat:{
   				required: true,
@@ -187,11 +187,11 @@ $(document).ready(function () {
   				required:icon+'请再次输入登录密码',
   				equalTo:icon+'再次输入密码不一致'
   			},
-  			phone: {
+  		/* 	phone: {
 				required:icon+'请输入手机号码',
 				maxlength:icon+'不能超过11位',
 				digits:icon+'只能输入整数'
-			},
+			}, */
   			remark:{
 				maxlength:'备注最多输入255个字符'
 			}

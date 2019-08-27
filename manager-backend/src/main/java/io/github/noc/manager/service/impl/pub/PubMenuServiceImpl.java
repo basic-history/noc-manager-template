@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import io.github.noc.manager.common.enums.MenuUser;
+import io.github.noc.manager.common.extension.SequenceGenerator;
 import io.github.noc.manager.common.util.AssertUtil;
 import io.github.noc.manager.common.util.CollectionUtil;
 import io.github.noc.manager.common.util.SessionUtil;
@@ -85,7 +86,7 @@ public class PubMenuServiceImpl implements PubMenuService {
 	public void save(PubMenuPO po) throws BusinessException {
 		//0级菜单
 		PubMenuPO zeroMenu = this.findMenuNodeZeroByUsername(SessionUtil.getUserName()).get(0);
-		po.setId(menuDao.getNextMenuId());
+		po.setId("U" + SequenceGenerator.next("SEQ_MENU_ID"));
 		po.setHasChild(PubMenuPO.HASCHILE_FALSE);
 		po.setNode(PubMenuPO.NODE_ONE);
 		po.setParentId(zeroMenu.getId());

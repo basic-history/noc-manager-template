@@ -33,7 +33,7 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/pubRole")
-@RequiresRoles("100")
+@RequiresRoles("100") //普通角色授权也不可操作
 public class PubRoleController {
 	
 	@Autowired

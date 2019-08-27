@@ -32,7 +32,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/pubUser")
-@RequiresRoles("100")
+@RequiresRoles("100") //普通角色授权也不可操作
 public class PubUserController {
 	
 	@Autowired

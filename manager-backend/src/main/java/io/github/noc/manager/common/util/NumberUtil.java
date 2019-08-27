@@ -21,10 +21,4 @@ public class NumberUtil {
 		return i.toString(toRadix);
 	}
 
-	public static void main(String[] args) {
-		BigInteger i = new BigInteger("1f", 16);
-		
-		System.out.println(i.toString(10));
-		System.out.println(radixConvert("632014121212325222312345", 10, 36));
-	}
 }

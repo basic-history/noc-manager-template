@@ -141,6 +141,8 @@
             </bean>  
         </property>  
     </bean>
+    
+    <bean class="io.github.noc.manager.common.util.ApplicationContextUtils"/>
 
 	<!-- mysql序列实现 -->
 	<bean class="io.github.noc.manager.common.extension.MysqlSequencePostProcessor" />

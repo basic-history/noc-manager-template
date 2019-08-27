@@ -22,7 +22,7 @@ public class MysqlSequencePostProcessor implements BeanFactoryPostProcessor {
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
 
-		DefaultListableBeanFactory defaultListableBeanFactory = (DefaultListableBeanFactory) beanFactory;
+		DefaultListableBeanFactory listableBeanFactory = (DefaultListableBeanFactory) beanFactory;
 
 		PubSequenceDao sequenceDao = beanFactory.getBean(PubSequenceDao.class);
 		DataSource dataSource = beanFactory.getBean(DataSource.class);
@@ -30,7 +30,10 @@ public class MysqlSequencePostProcessor implements BeanFactoryPostProcessor {
 		List<PubSequencePO> all = sequenceDao.selectList(Condition.empty());
 
 		all.forEach(s -> {
-			log.info("【序列自增器】开始注册{}", s);
+			
+			if(log.isDebugEnabled()){
+				log.debug("【序列自增器】开始注册{}", s);
+			}
 
 			BeanDefinitionBuilder definition = BeanDefinitionBuilder
 					.genericBeanDefinition(MysqlSequenceIncrementer.class, () -> {
@@ -39,12 +42,12 @@ public class MysqlSequencePostProcessor implements BeanFactoryPostProcessor {
 						incrementer.setDataSource(dataSource);
 						incrementer.setIncrementerName("pub_sequence"); // 公共序列表
 						incrementer.setColumnName("current_id");
-						incrementer.setSequenceName(s.getColumnName());
+						incrementer.setSequenceName(s.getSequenceName());
 						incrementer.setPaddingLength(s.getPaddingLength());
 						return incrementer;
 					});
 
-			defaultListableBeanFactory.registerBeanDefinition("pub_sequence#".concat(s.getColumnName()),
+			listableBeanFactory.registerBeanDefinition("pub_sequence#".concat(s.getSequenceName()),
 					definition.getBeanDefinition());
 		});
 	}

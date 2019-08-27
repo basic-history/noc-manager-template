@@ -3,7 +3,6 @@ package io.github.noc.manager.model.po.pub;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
 
 import com.alibaba.fastjson.JSON;

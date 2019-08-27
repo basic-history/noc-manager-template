@@ -51,7 +51,7 @@ public class MysqlSequenceIncrementer extends AbstractColumnMaxValueIncrementer 
 				String columnName = getColumnName();
 
 				String sql = "update " + getIncrementerName() + " set " + columnName + " = last_insert_id(" + columnName
-						+ " + " + getCacheSize() + ") where column_name = '" + getSequenceName() + "';";
+						+ " + " + getCacheSize() + ") where sequence_name = '" + getSequenceName() + "';";
 
 				stmt.executeUpdate(sql);
 				// Retrieve the new max of the sequence column...

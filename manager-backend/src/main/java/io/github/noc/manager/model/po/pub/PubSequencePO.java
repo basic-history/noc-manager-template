@@ -19,13 +19,16 @@ public class PubSequencePO {
 	@TableField("current_id")
 	private String currentId;
 
-	@TableField("column_name")
-	private String columnName;
+	@TableField("sequence_name")
+	private String sequenceName;
 
 	@TableField("cache_size")
 	private Integer cacheSize;
 
 	@TableField("padding_length")
 	private Integer paddingLength;
+	
+	@TableField("remark")
+	private String remark;
 
 }
