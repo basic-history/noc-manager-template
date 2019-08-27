@@ -141,5 +141,8 @@
             </bean>  
         </property>  
     </bean>
+
+	<!-- mysql序列实现 -->
+	<bean class="io.github.noc.manager.common.extension.MysqlSequencePostProcessor" />
 	
 </beans>

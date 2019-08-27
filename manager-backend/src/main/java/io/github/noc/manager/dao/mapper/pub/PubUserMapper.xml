@@ -10,7 +10,6 @@
         <result column="safe_password" 		property="safePassword"/>
         <result column="status" 			property="status"/>
         <result column="salt" 				property="salt"/>
-        <result column="phone" 				property="phone"/>
         <result column="create_by" 			property="createBy"/>
         <result column="create_time" 		property="createTime"/>
         <result column="remark" 			property="remark"/>
