@@ -9,6 +9,7 @@ import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.stereotype.Component;
 
 import com.baomidou.mybatisplus.mapper.Condition;
 
@@ -17,6 +18,7 @@ import io.github.noc.manager.model.po.pub.PubSequencePO;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Component
 public class MysqlSequencePostProcessor implements BeanFactoryPostProcessor {
 
 	@Override
@@ -30,10 +32,8 @@ public class MysqlSequencePostProcessor implements BeanFactoryPostProcessor {
 		List<PubSequencePO> all = sequenceDao.selectList(Condition.empty());
 
 		all.forEach(s -> {
-			
-			if(log.isDebugEnabled()){
-				log.debug("【序列自增器】开始注册{}", s);
-			}
+
+			log.info("【序列自增器】开始注册{}", s);
 
 			BeanDefinitionBuilder definition = BeanDefinitionBuilder
 					.genericBeanDefinition(MysqlSequenceIncrementer.class, () -> {
