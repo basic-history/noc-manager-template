@@ -38,7 +38,7 @@
 
 		<kaptcha.version>2.3.2</kaptcha.version>
 		<lombok.version>1.18.2</lombok.version>
-		<mysql.version>5.1.40</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 
 	</properties>
 
